@@ -1,0 +1,169 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ $primary-color: DeepSkyBlue;
+ $primary-color-select: DodgerBlue;
+ $primary-text: black;
+ $secondary-text: white;
+
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ main {
+   padding: 2% 15% 15% 15%;
+ }
+
+ textarea {
+   width: 100%;
+   height: 20vh;
+   padding: 5px;
+   font-size: 17px;
+   font-family: 'Raleway', sans-serif;
+   resize: none;
+ }
+
+ .navbar {
+   overflow: hidden;
+   background-color: $primary-color;
+ }
+
+ .navbar-brand {
+   float: left;
+   display: block;
+   color: $secondary-text;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 100%;
+ }
+
+ .nav-icon {
+   float: right;
+   display: block;
+   background-color: $primary-color;
+   color: $secondary-text;
+   text-align: center;
+   padding: 16px 16px;
+   border: 0px;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 17px;
+   transition: 0.5s;
+ }
+
+ .nav-item {
+   float: right;
+   display: block;
+   background-color: $primary-color;
+   color: $secondary-text;
+   text-align: center;
+   padding: 14px 16px;
+   border: 0px;
+   text-decoration: none;
+   font-size: 17px;
+   transition: 0.5s;
+ }
+
+ .navbar input[type=text], input[type=submit] {
+   padding: 6px;
+   margin-top: 8px;
+   font-size: 17px;
+   border-radius: 5px;
+   border: none;
+ }
+
+ a, input[type=submit] {
+   background-color: $primary-color;
+   color: $secondary-text;
+ }
+
+ a {
+   background-color: $primary-color;
+   color: $secondary-text;
+   padding: 6px;
+   font-size: 17px;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: 0.5s;
+ }
+
+ .nav-item:hover, .nav-icon:hover, input[type=submit]:hover, .pseudobutton:hover {
+   background-color: $primary-color-select;
+ }
+
+ .search-container {
+   float: right;
+ }
+
+ .heading {
+   text-transform: capitalize;
+ }
+
+ .give {
+   padding: 5% 0px;
+ }
+
+//  * {
+//    box-sizing: border-box;
+//    margin: 0;
+//    font-family: 'Raleway', sans-serif;
+//  }
+//
+//  body {
+//    margin: 0;
+//  }
+//
+//  .name {
+//     font-weight: bolder;
+//     font-size: 200%;
+//     color: $primary-text;
+//     text-decoration: none;
+//  }
+//
+// .navbar {
+//   width: 100vw;
+//   height: 10vh;
+//   padding: 1vh 1vw;
+//   background-color: $primary-color;
+//   display: inline-block;
+//   vertical-align: middle;
+// }
+//
+// .nav-item {
+//   height: 10vh;
+//   vertical-align: middle;
+// }
+//
+// .left {
+//   float: left;
+// }
+//
+// .right {
+//   float: right;
+// }
+//
+// .search {
+//   padding: 0.7vh 1vw;
+//   background-color: $primary-text;
+//   border-radius: 5px;
+//   border: none;
+// }

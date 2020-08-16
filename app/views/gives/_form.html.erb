@@ -1,0 +1,26 @@
+<%= form_with model: @give, local: true do |form| %>
+  <% if @give.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@give.errors.count, "error") %> prohibited this give from being saved:</h2>
+
+      <ul>
+        <% @give.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :title %>
+  <%= form.text_field :title, value: @give.title %>
+
+  <%= form.label :description %>
+  <%= form.text_area :description, value: @give.description %>
+
+  <%= form.label :cost %>
+  <%= form.text_field :cost, value: @give.cost %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

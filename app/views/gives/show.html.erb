@@ -1,0 +1,11 @@
+<h2>Title</h2>
+<p><%= @give.title %></p>
+
+<h2>Description</h2>
+<p><%= (@give.description.length < 1) ? 'No description available.' : @give.description %></p>
+
+<h2>Cost</h2>
+<p><%= @give.cost %></p>
+
+<%= link_to 'Edit', edit_give_path(@give) %> |
+<%= link_to 'Back', gives_path %>

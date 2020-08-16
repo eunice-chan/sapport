@@ -1,0 +1,17 @@
+<h1>Most Recent Gives</h1>
+
+<% Give.order(:created_at).each do |give| %>
+  <div class="give">
+
+    <p><strong>Title:</strong> <%= give.title %></p>
+
+    <p><strong>Description:</strong> <%= (give.description.length < 1) ? 'No description available.' : give.description %></p>
+
+    <p><strong>Cost:</strong> <%= give.cost %></p>
+
+    <p><strong>Giver:</strong> <%= User.find(give.user_id).username %></p>
+
+    <%= link_to "Message", rooms_path(give_id: give.id), method: :post, class: 'pseudobutton' %>
+
+  </div>
+<% end %>
